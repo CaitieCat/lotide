@@ -11,6 +11,7 @@ const assertArraysEqual = require('./assertArraysEqual');
         list = list.slice(index, index + 1);
       }
       console.log(list);
+      return list;
   }
 
   module.exports = middle;
