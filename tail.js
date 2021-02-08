@@ -6,13 +6,9 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const someArray = [];
-let newArray;
 let tail = function(someArray) {
-  newArray = someArray.slice(1);
+  let newArray = someArray.slice(1);
   return newArray;
 };
 
-console.log(tail(someArray));
-console.log(someArray);
-assertEqual(newArray, ['4', '5', '6']);
+module.exports = tail;
